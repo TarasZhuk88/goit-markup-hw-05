@@ -9,6 +9,7 @@
   --btn-background-portfolio: #f5f4fa;
   --secondary-bg-color: #f5f4fa;
   --solcial-icon-white-color: #ffffff;
+  --text-white-color: #ffffff;
 }
 
 html {
@@ -179,7 +180,7 @@ body {
 }
 
 /*описує */
-.text {
+/*.text {
   width: 270px;
   height: 75px;
   font-weight: 400;
@@ -187,7 +188,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-light-theme-color);
-}
+}*/
 
 .second-title {
   font-weight: 700;
@@ -334,11 +335,11 @@ body {
 }
 
 .portfolio-item .text {
+  /*ХЗ ШО ЦЕ ПОХОДУ ТЕКСТ ТЕХНОКРЯК :) */
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  /*color:var(--title-dark-theme-color);}*/
-  color: rgb(12, 12, 12);
+  color: #ffffff;
 }
 
 /*style margin, padding*/
@@ -722,7 +723,6 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   background: #ffffff;
-  background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
@@ -892,4 +892,89 @@ img {
 
 .plane-icon-send {
   margin-left: 10px;
+}
+
+/*Ефект Технокряк Портфоліо*/
+/*.portfolio-works-item {
+  border: none;
+}*/
+
+.img {
+  /*border: none;*/
+  display: block;
+}
+
+.effect-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-effect-text {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  /*transition: cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition: all 250ms linear;
+  color: var(--text-white-color);
+}
+
+.effect-item-div:hover .portfolio-effect-text {
+  opacity: 1;
+  top: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-focus-item:focus .portfolio-effect-text {
+  opacity: 1;
+  top: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+/*Ефект чим займаємось студія*/
+.studio-effect-text-div {
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+.studio-effect-text {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 83px;
+  padding-right: 82px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-white-color);
+  opacity: 0;
+  /*transition: cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition: all 250ms linear;
+}
+
+.studio-effect-text-div:hover .studio-effect-text {
+  opacity: 1;
+  top: 1;
+  background: rgba(47, 48, 58, 0.8);
 }
