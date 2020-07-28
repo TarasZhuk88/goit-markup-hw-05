@@ -15,7 +15,9 @@
 html {
   box-sizing: border-box;
 }
-
+* {
+  border: none;
+}
 *,
 *::before,
 *::after {
@@ -202,7 +204,6 @@ body {
 
 /*Чем мы занимаемся*/
 .projects-satandards-items {
-  
   padding-top: 27px;
   padding-bottom: 27px;
   background: rgba(47, 48, 58, 0.8);
@@ -210,11 +211,6 @@ body {
   text-transform: uppercase;
   color: var(--title-dark-theme-color);
 }
-
-
-
-
-
 
 /*Наша Команда*/
 
@@ -687,6 +683,13 @@ img {
 
 /*ПОРТФОЛІО*/
 
+li {
+  border: none;
+}
+img {
+  border: none;
+}
+
 .div-portfolio-section {
   width: 1176px;
   padding-top: 61px;
@@ -948,7 +951,7 @@ img {
   top: 0;
   background-color: rgba(33, 150, 243, 0.9);
 }
-/*Ефект чим займаємось студія
+/*Ефект чим займаємось студія*/
 .studio-effect-text-div {
   position: relative;
   overflow: hidden;
@@ -956,9 +959,9 @@ img {
 
 .studio-effect-text {
   position: absolute;
-  top: 100%;
+  bottom: 0%;
   left: 0%;
-  /*width: 370px;
+  width: 370px;
   height: 70px;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -973,10 +976,19 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-white-color);
-  opacity: 0;
+  opacity: 1;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms linear;
+}
+
+/*.studio-effect-text-div:hover .studio-effect-text {
+  opacity: 1;
+  bottom: 100%;
+  background-color: background rgba(47, 48, 58, 0.8);
 }*/
 
-
-}
+/*.effect-studio-list-img:focus .studio-effect-text {
+  opacity: 1;
+  bottom: 0%;
+  background-color: background rgba(47, 48, 58, 0.8);
+}*/
